@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <title>IMC</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">      
+      <link rel="stylesheet" type="text/css"  href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" href="assets/css/web-fonts-with-css/css/fontawesome-all.min.css">
+      <script type="text/javascript" src="assets/js/script.js"></script>
+   </head>
+   <body>
+      <div class="conteiner-fluid">
+         <div class="viewer" id="mySection6">
+            <div class="container-fluid">
+               <div class="row"><br></div>                              
+               <div class="row"></div>
+               <div class="row">
+                  <div class="col col-md-1 col-sm-1 col-1"></div>
+                  <div class="col col-md-6 col-sm-10 col-10">
+                     <div class="box">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div style="text-align:center;font-size:30px">
+                                 <h1>Calcule seu IMC</h1>
+                              </div>
+                           </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div style="margin-left: 40px;margin-right: 40px">
+                                 <form method="POST">
+                                    <div class="form-group">                                                        
+                                       <input id="altura" type="number" name="altura" placeholder="Altura (Metros)" class="form-control" />
+                                    </div>
+                                    <div class="form-group">                                                        
+                                       <input id="peso" type="number" name="peso" placeholder="Peso (Kg)" class="form-control" />
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                         <div style="text-align:center">
+                                            <a onclick="calcularIMC()" class="btn" style="color: white">
+                                            Caulcular
+                                            </a>
+                                         </div>
+                                      </div>
+                                   </div> 
+                                    <div class="form-group">                                                        
+                                        <input id="resultado"type="number" name="resultado" placeholder="IMC" disabled class="form-control" />
+                                     </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                                               
+                     </div>
+                  </div>
+                  <div class="col col-md-4">
+                      <table class="table table-striped" style="color: #606060">
+                        <thead class="thead-dark"> 
+                        <tr>                              
+                              <th>CLASSIFICAÇÃO</th>
+                              <th>IMC</th>                              
+                          </tr>
+                        </thead> 
+                        <tbody>
+                            <tr>
+                                <th>MAGREZA</th>
+                                <th> < 18.5</th>                                
+                              </tr>
+                              <tr>
+                                <th>NORMAL</th>
+                                <th>18.5 a 24.9</th>                                
+                              </tr>
+                              <tr>
+                                <th>SOBREPESO</th>
+                                <th> 24.9 a 30.0</th>                                
+                              </tr>
+                              <tr>
+                                <th>OBESIDADE</th>
+                                <th> > 30</th>                                
+                              </tr>
+                        </tbody>                         
+                      </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>   
+   </body>
+</html>
